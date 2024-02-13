@@ -1,3 +1,38 @@
 <!DOCTYPE html>
     <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+</html>
+<head>
+    <title>UI interaction</title>
+</head>
+<head>
+    <title>Button Example</title>
+</head>
+<body>
+    <button class="custom-button">Work with me</button>
+    <script>
+        $(document).ready(function() {
+     
+            $(".custom-button").hover(function() {
+            
+                $(this).css({
+                    "background-color": "black",
+                    "color": "white",
+                    "border": "none"
+                });
+            }, function() {
+                $(this).css({
+                    "background-color": "white",
+                    "color": "#29611A",
+                    "border": "2px solid #29611A"
+                });
+            });
+
+            $(".custom-button").hover(function() {
+                console.log("Hovered over the button!");
+            });
+        });
+    </script>
+</body>
 </html>
